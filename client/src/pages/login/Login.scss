@@ -1,0 +1,79 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f6fc;
+  height: 100vh;
+
+  form {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      text-align: center; // Center-align the text
+    }
+
+    .signup-link {
+      color: #191970; // Primary color for link
+      text-decoration: none; // Remove default underline
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline; // Add underline on hover
+      }
+    }
+
+    h1 {
+      color: #2d3e50;
+      margin: 0 0 20px 0;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    label {
+      color: #191970;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      padding: 12px;
+      border: 2px solid #dcdcdc; // Light gray border color
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    button {
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      background-color: #191970; /* Primary button color */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #191970; // Darker button color on hover
+      }
+    }
+
+    span {
+      color: red;
+      font-size: 12px;
+
+      &:hover {
+        color: #c0392b; // Darker color on hover for better interaction
+      }
+    }
+  }
+}
