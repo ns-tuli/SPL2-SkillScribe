@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer.jsx";
 import Add from "./pages/add/Add.jsx";
 import Gig from "./pages/gig/Gig.jsx";
 import MyGigs from "./pages/myGigs/MyGigs.jsx";
-import Conversation from "./pages/conversation/Conversation.jsx";
+import Messages from "./pages/messages/Messages.jsx";
 import Message from "./pages/message/Message.jsx";
 import Gigs from "./pages/gigs/Gigs.jsx";
 import Orders from "./pages/orders/Orders.jsx";
@@ -23,6 +23,8 @@ import {
   QueryClientProvider,
   useQuery,
 } from "@tanstack/react-query";
+import Pay from "./pages/pay/Pay.jsx";
+import Success from "./pages/success/Success.jsx";
 
 function App() {
   const queryClient = new QueryClient();
@@ -82,12 +84,20 @@ function App() {
           element: <Add />,
         },
         {
-          path: "/conversation",
-          element: <Conversation />,
+          path: "/messages",
+          element: <Messages />,
         },
         {
           path: "/message/:id",
           element: <Message />,
+        },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
         },
       ],
     },
