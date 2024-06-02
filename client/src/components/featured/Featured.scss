@@ -2,7 +2,15 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  background-color: #191970;
+  background: rgb(0, 112, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 112, 255, 1) 0%,
+    rgba(7, 50, 148, 1) 23%,
+    rgba(9, 9, 121, 1) 67%,
+    rgba(2, 0, 36, 1) 100%
+  );
+
   color: white;
 
   .container {
@@ -43,24 +51,41 @@
           }
 
           input {
+            font-size: large;
             border: none;
             outline: none;
 
             &::placeholder {
+              font-size: large;
               color: gray;
             }
           }
         }
 
         button {
-          width: 120px;
           font-size: large;
-          height: 50px;
-          border: none;
-          background-color: rgb(58, 138, 237);
-          color: white;
-          align-self: flex-end;
-          cursor: pointer;
+          padding: 16.5px 30px;
+          border: 0;
+          // border-radius: 100px;
+          background-color: #2ba8fb;
+          color: #ffffff;
+          font-weight: Bold;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+        }
+
+        button:hover {
+          background-color: #6fc5ff;
+          box-shadow: 0 0 20px #6fc5ff50;
+          transform: scale(1.1);
+        }
+
+        button:active {
+          background-color: #3d94cf;
+          transition: all 0.25s;
+          -webkit-transition: all 0.25s;
+          box-shadow: none;
+          transform: scale(0.98);
         }
       }
 
